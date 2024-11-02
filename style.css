@@ -1,0 +1,17 @@
+body{
+    background-color: #FAEFCE;
+    color: #4E3025;
+    font-family:'Courier New', Courier, monospace;
+}
+
+button{
+    background-color: #4E3025;
+    color: #FAEFCE;
+    border-color: transparent;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+a{
+    text-decoration: none;
+}
