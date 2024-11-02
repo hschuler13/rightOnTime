@@ -8,11 +8,23 @@ body{
     font-style: normal;
 }
 
-div{
+.index{
+    padding-top: 45vh;
     margin: auto;
-    
+    height: fit-content;
+    width: fit-content;
 }
 
+.intro{
+    padding-top: 45vh;
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+}
+
+.intro a{
+    padding: auto;
+}
 h1{
     text-align: center;
 }
