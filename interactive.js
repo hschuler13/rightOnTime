@@ -29,3 +29,4 @@ function calculateCountry(){
     
 }
 
+countriesList = ["Brazil", "Canada", "Egypt", "Greece", "Indonesia", "Italy", "Lebanon", "Mexico", "Nigeria", "Vietnam"];
