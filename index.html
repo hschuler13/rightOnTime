@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>My Page Title</title>
-    <link rel="icon" type="image/x-icon" href="resources/favicon/ico/blue_favicon.ico" />
+    <link id="dynamic-favicon" rel="icon" href="resources/favicon/ico/blue_favicon.ico" type="image/x-icon">
     <link
       href="../dist/jqvmap.css"
       media="screen"
@@ -51,6 +51,7 @@
       });
     </script>
   </head>
+  <button onclick="changeFavicon()"></button>
   <body>
     <div id="vmap" style="width: 600px; height: 400px"></div>
   </body>
