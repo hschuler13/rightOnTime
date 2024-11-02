@@ -1,10 +1,24 @@
+@import url("https://use.typekit.net/qmv8wym.css");
+
 body{
     background-color: #FAEFCE;
     color: #4E3025;
-    font-family:'Courier New', Courier, monospace;
+    font-family: "futura-pt-condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
 }
 
-button{
+div{
+    margin: auto;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+.button{
+    display: flex;
     background-color: #4E3025;
     color: #FAEFCE;
     border-color: transparent;
@@ -16,9 +30,14 @@ a{
     text-decoration: none;
 }
 
+a:visited{
+    color: #4E3025;
+}
+
 input{
     display: none;
 }
+
 input:checked+label.pink{
     color:#F8C1BF;
 }
@@ -31,9 +50,3 @@ input:checked+label.green{
 input:checked+label.blue{
     color:#68C8D2;
 }
-
-/*.star{
-    width:1.0em;
-    height:1.0em;
-    color: #4E3025;
-}*/
