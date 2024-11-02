@@ -15,3 +15,25 @@ button{
 a{
     text-decoration: none;
 }
+
+input{
+    display: none;
+}
+input:checked+label.pink{
+    color:#F8C1BF;
+}
+input:checked+label.yellow{
+    color:#E2BE5E;
+}
+input:checked+label.green{
+    color:#C2E0BB;
+}
+input:checked+label.blue{
+    color:#68C8D2;
+}
+
+/*.star{
+    width:1.0em;
+    height:1.0em;
+    color: #4E3025;
+}*/
