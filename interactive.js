@@ -41,34 +41,21 @@ function changeFaviconhelper(newFavicon) {
 function getRandomNumber() {
   return Math.floor(Math.random() * 4) + 1;
 }
-
-let B=0;
-let C=0;
-let E=0;
-let G=0;
-let IN=0;
-let IT=0;
-let L=0;
-let M=0;
-let N=0;
-let V=0;
-countriesList = [B,C,E,G,IN,IT,L,M,N,V];
-function addValues(values){
   
+submitBtn = document.getElementById('submitButton')
+submitBtn.onclick = function(){
+    for(let i = 0; i < document.getElementsByTagName('input')-1; i++){
+        let rBtn = document.getElementsByTagName('input')[i]
+        if(rBtn.checked){
+            console.log(rBtn.value)
+        }
+        else{
+            console.log("null")
+        }
+    }
 }
 
-function calculateCountry(){
-  let valuesIndex = 0;
-  for(let i=0;i<countriesList.length;i++){
-    if(countriesList[i] == values[valuesIndex]){
-      countriesList[i]++;
-      valuesIndex++;
-      if(valuesIndex == values.length){
-        break;
-      }
-    }
-  }
-}
+
 
 
 
