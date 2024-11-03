@@ -19,28 +19,6 @@ const scrollDivs = document.querySelectorAll('.hide')
 //run observer on all elements with hide class
 scrollDivs.forEach((elmnt) => observer.observe(elmnt))
 
-function changeFavicon() {
-  changeFaviconhelper(newFaviconList[getRandomNumber])
-}
-
-newFaviconList = [
-  "resources/favicon/ico/blue_favicon.ico",
-  "resources/favicon/ico/green_favicon.ico",
-  "resources/favicon/ico/pink_favicon.ico",
-  "resources/favicon/ico/yellow_favicon.ico"
-];
-
-
-function changeFaviconhelper(newFavicon) {
-  const link = document.getElementById("dynamic-favicon");
-  if (link) {
-    link.href = newFavicon;
-  }
-}
-
-function getRandomNumber() {
-  return Math.floor(Math.random() * 4) + 1;
-}
 
 submitBtn = document.getElementById('submitButton')
 submitBtn.onclick = function(){
@@ -55,4 +33,12 @@ submitBtn.onclick = function(){
     }
 }
 
-countriesList = ["Brazil!", "Canada!", "Egypt!", "Greece!", "Indonesia!", "Italy!", "Lebanon!", "Mexico!", "Nigeria!", "Vietnam!"];
+countriesList = ["Brazil!", "Canada!", "Egypt!", "Greece!", "Indonesia!", "Italy!", "Lebanon!", "Mexico!", "Nigeria!", "Vietnam!"]
+
+function randomNumber(max){
+    return Math.floor(Math.random() * max) 
+}
+
+function countrySelect(){
+    document.getElementsByTagName('p')[1].innerText = countriesList[randomNumber(10)];
+}
