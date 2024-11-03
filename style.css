@@ -8,6 +8,23 @@ body{
     font-style: normal;
 }
 
+section{
+    display: grid;
+    text-align: center;
+    align-content: center;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.hide{
+    opacity: 0;
+    transition: all 2s;
+}
+
+.show{
+    opacity: 1;
+}
+
 .index{
     padding-top: 45vh;
     margin: auto;
@@ -38,6 +55,7 @@ h1{
     width: fit-content;
 }
 
+
 a{
     text-decoration: none;
 }
@@ -61,4 +79,31 @@ input:checked+label.green{
 }
 input:checked+label.blue{
     color:#68C8D2;
+}
+
+@media(prefers-reduced-motion){
+    .hide{
+        transition: none;
+    }
+}
+
+.answers{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;  
+}
+
+li{
+    list-style-type: none;
+}
+
+img{
+    width: 35vw;
+    height: 40vh;
 }

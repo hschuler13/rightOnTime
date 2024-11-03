@@ -58,7 +58,7 @@ jQuery('#vmap').vectorMap(
     normalizeFunction: 'linear',
     scaleColors: ['#b6d6ff', '#005ace'],
     selectedColor: '#c9dfaf',
-    selectedRegions: null,
+    selectedRegions: 'ID';
     showTooltip: true,
     onRegionClick: function(element, code, region)
     {

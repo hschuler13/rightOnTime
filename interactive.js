@@ -1,3 +1,24 @@
+////SCROLL ANIMATION
+////scroll animation based on: https://www.youtube.com/watch?v=T33NN_pPeNI&ab_channel=BeyondFireship
+//check each element to see if it is visible to the user
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        //fade element in when it is visible to the user
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show')
+        }
+        //hide element once it can't be seen anymore
+        else {
+            entry.target.classList.remove('show')
+        }
+    })
+})
+
+//find all elements with hide class
+const scrollDivs = document.querySelectorAll('.hide')
+//run observer on all elements with hide class
+scrollDivs.forEach((elmnt) => observer.observe(elmnt))
+
 function changeFavicon() {
   changeFaviconhelper(newFaviconList[getRandomNumber])
 }
@@ -26,7 +47,7 @@ let B = 0;
 let C = 0;
 let D = 0;
 function calculateCountry(){
-    
+
 }
 
-countriesList = ["Brazil", "Canada", "Egypt", "Greece", "Indonesia", "Italy", "Lebanon", "Mexico", "Nigeria", "Vietnam"];
+countriesList = ["Brazil!", "Canada!", "Egypt!", "Greece!", "Indonesia!", "Italy!", "Lebanon!", "Mexico!", "Nigeria!", "Vietnam!"];
