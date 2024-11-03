@@ -48,11 +48,17 @@ h1{
 
 .button{
     display: flex;
+    vertical-align: middle;
     background-color: #4E3025;
     color: #FAEFCE;
     border-color: transparent;
     border-radius: 20px;
-    width: fit-content;
+    width: 20vw;
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3.0em;
+    font-family: "futura-pt-condensed", sans-serif;
 }
 
 

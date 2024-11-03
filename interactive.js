@@ -42,12 +42,17 @@ function getRandomNumber() {
   return Math.floor(Math.random() * 4) + 1;
 }
 
-let A = 0;
-let B = 0;
-let C = 0;
-let D = 0;
-function calculateCountry(){
-
+submitBtn = document.getElementById('submitButton')
+submitBtn.onclick = function(){
+    for(let i = 0; i < document.getElementsByTagName('input')-1; i++){
+        let rBtn = document.getElementsByTagName('input')[i]
+        if(rBtn.checked){
+            console.log(rBtn.value)
+        }
+        else{
+            console.log("null")
+        }
+    }
 }
 
 countriesList = ["Brazil!", "Canada!", "Egypt!", "Greece!", "Indonesia!", "Italy!", "Lebanon!", "Mexico!", "Nigeria!", "Vietnam!"];
